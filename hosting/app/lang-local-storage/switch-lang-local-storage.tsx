@@ -1,19 +1,17 @@
 "use client";
 
-import {
-  permanentRedirect,
-  redirect,
-  usePathname,
-  useRouter,
-} from "next/navigation";
-import { LangType } from "../i18n/i18n";
+import { usePathname, useRouter } from "next/navigation";
+import { LangType } from "../../i18n/i18n";
 
 export function SwitchLangLocalStorage() {
   const router = useRouter();
   const pathname = usePathname();
 
   const onClickSwitchLang = (lang: LangType) => {
-    const newPath = pathname.replace(/^\/[^/]*/, `/${lang}`);
+    const newPath = pathname.replace(
+      /^\/lang-local-storage\/[^/]*/,
+      `/lang-local-storage/${lang}`
+    );
     localStorage.setItem("lang", lang);
     router.push(newPath);
   };

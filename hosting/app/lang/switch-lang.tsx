@@ -1,17 +1,13 @@
 "use client";
 
-import {
-  permanentRedirect,
-  redirect,
-  usePathname,
-  useRouter,
-} from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export function SwitchLang() {
   const router = useRouter();
   const pathname = usePathname();
+
   const onClickSwitchLang = (lang: string) => {
-    const newPath = pathname.replace(/^\/[^/]*/, `/${lang}`);
+    const newPath = pathname.replace(/^\/lang\/[^/]*/, `/lang/${lang}`);
     router.push(newPath);
   };
 

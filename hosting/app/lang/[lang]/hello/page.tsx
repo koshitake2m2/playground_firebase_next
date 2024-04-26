@@ -1,11 +1,8 @@
-import { SwitchLang } from "../../../../components/switch-lang";
-import { i18nMap } from "../../../../i18n/i18n";
-
-const langParams = [{ lang: "en" }, { lang: "ja" }];
-type LangType = "en" | "ja";
+import { SwitchLang } from "../../switch-lang";
+import { i18nMap, langPathParams, LangType } from "../../../../i18n/i18n";
 
 export function generateStaticParams() {
-  return langParams;
+  return langPathParams;
 }
 
 export default function HelloPage({ params }: { params: { lang: LangType } }) {
@@ -15,6 +12,7 @@ export default function HelloPage({ params }: { params: { lang: LangType } }) {
     <>
       <h1>Hello</h1>
       <p>lang: {lang}</p>
+      <p>ab: {i18n.a.b}</p>
       <SwitchLang />
     </>
   );

@@ -1,9 +1,9 @@
 import Script from "next/script";
 
-export default function RedirectLangPage() {
+export default function LangLocalStoragePage() {
   return (
     <>
-      <Script src={`/redirect_lang_local_storage.js`}></Script>
+      <Script src={`/lang-local-storage/redirect.js`}></Script>
     </>
   );
 }
