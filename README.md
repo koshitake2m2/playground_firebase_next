@@ -1,1 +1,1 @@
-# playground_firebase_next
+# playground_next_ssg
