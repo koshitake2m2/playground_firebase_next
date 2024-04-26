@@ -8,7 +8,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
-  assetPrefix: isProd ? "/dist" : undefined,
+  // assetPrefix: isProd ? "/dist" : undefined,
   images: {
     unoptimized: true,
   },
