@@ -1,6 +1,6 @@
-import Script from "next/script";
 import { SwitchLangLocalStorage } from "../../switch-lang-local-storage";
-import { i18nMap, langPathParams, LangType } from "../../../../i18n/i18n";
+import { i18nMap, langPathParams } from "../../../../i18n/i18n";
+import { LangType } from "../../../../i18n/i18n-type";
 
 export function generateStaticParams() {
   return langPathParams;

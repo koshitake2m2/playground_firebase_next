@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { i18nMap, langPathParams, LangType } from "../../../i18n/i18n";
+import { i18nMap, langPathParams } from "../../../i18n/i18n";
 import { SwitchLangLocalStorage } from "../switch-lang-local-storage";
+import { LangType } from "../../../i18n/i18n-type";
 
 export function generateStaticParams() {
   return langPathParams;

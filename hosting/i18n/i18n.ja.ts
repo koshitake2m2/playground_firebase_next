@@ -1,6 +1,5 @@
-import { I18nType } from "./i18n";
+import { I18nType } from "./i18n-type";
 
-// export const i18nJa: I18nType = {
 export const i18nJa = {
   lang: "ja",
   greeting: "こんにちは",
@@ -9,4 +8,4 @@ export const i18nJa = {
   a: {
     b: "abだよ",
   },
-};
+} as const satisfies Partial<I18nType>;

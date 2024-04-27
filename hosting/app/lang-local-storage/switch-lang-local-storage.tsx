@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import { LangType } from "../../i18n/i18n";
+import { LangType } from "../../i18n/i18n-type";
 
 export function SwitchLangLocalStorage() {
   const router = useRouter();
