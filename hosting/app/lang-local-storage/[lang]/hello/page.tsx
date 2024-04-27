@@ -11,10 +11,9 @@ export default function HelloPage({ params }: { params: { lang: LangType } }) {
   const i18n = i18nMap[lang];
   return (
     <>
-      <Script src={`/lang-local-storage/redirect.js`}></Script>
       <h1>Hello</h1>
       <p>lang: {lang}</p>
-      <p>ab: {i18n.a.b}</p>
+      <p>greeting: {i18n.greeting}</p>
       <SwitchLangLocalStorage />
     </>
   );

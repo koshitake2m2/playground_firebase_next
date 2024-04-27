@@ -14,8 +14,8 @@ export default function LangPage({ params }: { params: { lang: LangType } }) {
     <>
       <h1>lang</h1>
       <p>lang: {lang}</p>
-      <p>{i18n.say("wow")}</p>
-      <Link href={`/lang/${lang}/hello`}>hello</Link>
+      <p>welcome: {i18n.welcome}</p>
+      <Link href={`/lang/${lang}/hello`}>hello page</Link>
       <SwitchLang />
     </>
   );

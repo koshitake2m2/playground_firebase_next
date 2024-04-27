@@ -1,6 +1,7 @@
 export const i18nEn = {
   lang: "en",
-  hello: "hello",
+  greeting: "Hello",
+  welcome: "Welcome",
   say: (words: string) => `say ${words}`,
   a: {
     b: "ab",

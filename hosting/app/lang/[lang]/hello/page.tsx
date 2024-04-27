@@ -12,7 +12,7 @@ export default function HelloPage({ params }: { params: { lang: LangType } }) {
     <>
       <h1>Hello</h1>
       <p>lang: {lang}</p>
-      <p>ab: {i18n.a.b}</p>
+      <p>greeting: {i18n.greeting}</p>
       <SwitchLang />
     </>
   );
