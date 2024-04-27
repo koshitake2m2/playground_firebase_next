@@ -4,7 +4,7 @@ export const i18nJa = {
   lang: "ja",
   greeting: "こんにちは",
   welcome: "ようこそ",
-  say: (words: string) => `言う ${words}`,
+  say: (words: string) => `「${words}」と言う`,
   a: {
     b: "abだよ",
   },
