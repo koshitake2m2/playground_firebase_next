@@ -17,6 +17,7 @@ const metaProps = (i18n: I18nType) => [
   { property: "og:site_name", content: "playground-koshitake2m2" },
 ];
 
+// WARNING: これでは動的にmetaを変更できない...
 const setMetadata = (i18n: I18nType) => {
   if (typeof document !== "undefined" && !document.getElementById("og:title")) {
     for (const metaProp of metaProps(i18n)) {
