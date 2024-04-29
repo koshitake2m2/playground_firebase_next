@@ -15,11 +15,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // skip lint for build:watch
   },
-  // trailingSlash: true,
-  // i18n: {
-  //   locales: ["en-US", "fr", "nl-NL"],
-  //   defaultLocale: "en-US",
-  // },
 };
 
 module.exports = nextConfig;
