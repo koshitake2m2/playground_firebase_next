@@ -1,6 +1,7 @@
+import { NextPage } from 'next';
 import Link from 'next/link';
 
-export default function () {
+const page: NextPage = () => {
   const linkList = [
     '/about',
     '/lang',
@@ -20,4 +21,6 @@ export default function () {
       <ul>{linkLiList}</ul>
     </>
   );
-}
+};
+
+export default page;
