@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { usePathname, useRouter } from "next/navigation";
-import { LangType } from "../../i18n/i18n-type";
+import { usePathname, useRouter } from 'next/navigation';
+import { LangType } from '../../i18n/i18n-type';
 
 export function SwitchLangLocalStorage() {
   const router = useRouter();
@@ -12,7 +12,7 @@ export function SwitchLangLocalStorage() {
       /^\/lang-local-storage\/[^/]*/,
       `/lang-local-storage/${lang}`
     );
-    localStorage.setItem("lang", lang);
+    localStorage.setItem('lang', lang);
     router.push(newPath);
   };
 
@@ -20,8 +20,8 @@ export function SwitchLangLocalStorage() {
     <>
       <h1>switch lang</h1>
 
-      <button onClick={() => onClickSwitchLang("en")}>en</button>
-      <button onClick={() => onClickSwitchLang("ja")}>ja</button>
+      <button onClick={() => onClickSwitchLang('en')}>en</button>
+      <button onClick={() => onClickSwitchLang('ja')}>ja</button>
     </>
   );
 }

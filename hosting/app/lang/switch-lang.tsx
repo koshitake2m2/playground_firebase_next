@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { usePathname, useRouter } from "next/navigation";
-import { LangType } from "../../i18n/i18n-type";
+import { usePathname, useRouter } from 'next/navigation';
+import { LangType } from '../../i18n/i18n-type';
 
 export function SwitchLang() {
   const router = useRouter();
@@ -16,8 +16,8 @@ export function SwitchLang() {
     <>
       <h1>switch lang</h1>
 
-      <button onClick={() => onClickSwitchLang("en")}>en</button>
-      <button onClick={() => onClickSwitchLang("ja")}>ja</button>
+      <button onClick={() => onClickSwitchLang('en')}>en</button>
+      <button onClick={() => onClickSwitchLang('ja')}>ja</button>
     </>
   );
 }

@@ -1,5 +1,5 @@
-import { Suspense } from "react";
-import { WelcomeComponent } from "./welcome-component";
+import { Suspense } from 'react';
+import { WelcomeComponent } from './welcome-component';
 
 export default function LangPage() {
   return (
